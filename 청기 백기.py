@@ -1,34 +1,55 @@
+import datetime
+import time
 import random
 import os
-
+print("청기 = 1")
+print("백기 = 2")
+input("enter를 누르면 게임을 시작합니다")
+count = 0
 while True:
-
-    print("청기 백기를 시작하겠습니다.")
-    print("게임은 상대방과 자신이 같아질때까지 진행 됩니다.")
-    print("컴퓨터가 랜덤으로 청기와 백기중 하나를 들겁니다")
-    print("\n")
-
-    print("청기 = 1")
-    print("백기 = 2")
-
-    user = int(input("원하는 숫자를 입력하세요"))
-    print("\n")
-    com = random.randint(1,2)
-
-    if (user == 1):
-
-        if (com == 1):
-            print("상대가 청기를 선택해서 비겼습니다. 게임을 종료합니다.")
-            break
+    ran_flag = random.randint(1,2)
+    if ran_flag == 1:
+        print("청기들어!\n")
+        endTime = datetime.datetime.now() + datetime.timedelta(seconds=3)
+        flag = input(">> ")
+        if datetime.datetime.now() <= endTime:
+            if flag == "1":
+                print("정답")
+                count += 1
+                time.sleep(1)
+                os.system("cls")
+            elif flag == "2":
+                print("틀렸습니다")
+                print("{} 번 성공!".format(count))
+                break
+            else:
+                print("잘못된 숫자입니다")
+                print("{} 번 성공!".format(count))
+                break
         else:
-            print("상대가 백기를 선택해서 이겼습니다. 게임을 진행합니다.")
-            os.system('cls')
-
-    elif (user == 2):
-
-        if (com == 1):
-            print("상대가 청기를 선택해서 이겼습니다. 게임을 진행합니다.")
+            print("time out")
+            print("{} 번 성공!".format(count))
             break
+
+    if ran_flag == 2:
+        print("백기들어!\n")
+        endTime = datetime.datetime.now() + datetime.timedelta(seconds=3)
+        flag = input(">> ")
+        if datetime.datetime.now() <= endTime:
+            if flag == "2":
+                print("정답")
+                count += 1
+                time.sleep(1)
+                os.system("cls")
+            elif flag == "1":
+                print("틀렸습니다")
+                print("{} 번 성공!".format(count))
+                break
+            else:
+                print("잘못된 숫자입니다")
+                print("{} 번 성공!".format(count))
+                break
         else:
-            print("상대가 백기를 선택해서 비겼습니다. 게임을 종료합니다. ")
-            os.system('cls')
+            print("time out")
+            print("{} 번 성공!".format(count))
+            break
