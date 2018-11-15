@@ -1,19 +1,19 @@
 import random
 import os
 
-while True:  # 여기에 while문을 입력하게되면 아래의 코드가 무한반복이 된다
+print("참참참을 시작합니다")
+print("오른쪽, 왼쪽, 가운데에 지정되어 있는 숫자 하나를 고르세요")
+print("컴퓨터가 오른쪽, 왼쪽, 가운데 중 하나를 선택할겁니다 당신은 컴퓨터가 선택 한 답과 달라야 이깁니다")
+print("\n")
 
-    print("참참참을 시작합니다")
-    print("오른쪽, 왼쪽, 가운데에 지정되어 있는 숫자 하나를 고르세요")
-    print("컴퓨터가 오른쪽, 왼쪽, 가운데 중 하나를 선택할겁니다 당신은 컴퓨터가 선택 한 답과 달라야 이깁니다")
-    print("\n")
+while True:  # 여기에 while문을 입력하게되면 아래의 코드가 무한반복이 된다
 
     print("오른쪽 = 1")
     print("왼쪽 = 2")
     print("가운데 = 3")
     print("종료 = 4")
 
-    user = int(input("원하는 숫자를 입력하세요"))
+    user = int(input("원하는 숫자를 입력하세요 :"))
     print("\n")
     com = random.randint(1, 3)
 
