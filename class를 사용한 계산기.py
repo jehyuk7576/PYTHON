@@ -4,7 +4,7 @@ class Calculater():
     def add(self, num1, num2):
         self.result = num1 + num2
         return self.result
-    def dec(self, num1, num2):
+    def sub(self, num1, num2):
         self.result = num1 - num2
         return self.result
     def mul(self, num1, num2):
@@ -14,9 +14,11 @@ class Calculater():
         self.result = num1 / num2
         return self.result
 
+number1 = input("첫번째 수를 입력하세요 : ")
+number2 = input("두번쨰 수를 입력하세요 : ")
 
 con = Calculater()
-print(con.add(1, 2))
-print(con.dec(1, 2))
-print(con.mul(1, 2))
-print(con.div(1, 2))
+print(con.add(int(number1), int(number2)))
+print(con.sub(int(number1), int(number2)))
+print(con.mul(int(number1), int(number2)))
+print(con.div(int(number1),int(number2)))
