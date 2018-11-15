@@ -1,7 +1,7 @@
 import random
 import os
 
-while True:  # 여기에 while문을 입력하게되면 여기 아래쪽에 포함하는 모든 코드들이 무한 반복이된다
+while True:  # 여기에 while문을 입력하게되면 아래의 코드가 무한반복이 된다
 
     print("참참참을 시작합니다")
     print("오른쪽, 왼쪽, 가운데에 지정되어 있는 숫자 하나를 고르세요")
