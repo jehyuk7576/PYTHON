@@ -10,7 +10,7 @@ signature_dic = [
     {'ext': '.img', 'hex': '504943540008', 'byte': 6},
     {'ext': '.gif', 'hex': '474946383961', 'byte': 6},
     {'ext': '.png', 'hex': '89504E470D0A1A0A', 'byte': 8},
-    {'ext': '.jpeg', 'hex': 'FFD8FFE0', 'byte': 0},
+    {'ext': '.jpeg', 'hex': 'FFD8FFE0', 'byte': 4},
     {'ext': '.wav', 'hex': '52494646', 'byte': 4},
     {'ext': '.zip', 'hex': '504B0304', 'byte': 4},
     ]
